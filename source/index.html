@@ -3,7 +3,7 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>FCC: Survey Form</title>
+  <title>BS: Simply Me</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,8 +14,9 @@
   <meta name="googlebot"                content="">
   <meta name="google-site-verification" content="">
 
-<!--   <link rel="preload" href="fonts/woff2/Poppins-Regular.woff2" as="font" type="font/woff2"          crossorigin>
-<link rel="preload" href="fonts/woff2/Poppins-ExtraLightItalic.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link rel="preload" href="fonts/woff2/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/woff2/Montserrat-Light.woff2"   as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/woff2/Montserrat-Bold.woff2"    as="font" type="font/woff2" crossorigin>
 
   <link rel="preload" href="css/style.css" as="style">
 
@@ -39,7 +40,64 @@
 
 </head>
 
-<body class="body">
+<body class="usr-body">
+  <header class="usr-header">
+
+    <a class="skip-link" href="#usr-main">Skip to main</a>
+
+  </header>
+
+  <main class="usr-main">
+
+    <h1 class="usr-main__caption">Who Am I?</h1>
+
+    <picture>
+      <source type="image/webp"
+        media="(min-width: 1100px)"
+        srcset="image/min/mountain-desktop-3x-2.webp 3x,
+                image/min/mountain-desktop-2x-2.webp 2x,
+                image/min/mountain-desktop-2.webp">
+
+      <source type="image/webp"
+        media="(min-width: 600px)"
+        srcset="image/min/mountain-tablet-3x-2.webp 3x,
+                image/min/mountain-tablet-2x-2.webp 2x,
+                image/min/mountain-tablet-2.webp">
+
+      <source type="image/webp"
+        srcset="image/min/mountain-mobile-3x-2.webp 3x,
+                image/min/mountain-mobile-2x-2.webp 2x,
+                image/min/mountain-mobile-2.webp">
+
+      <source type="image/jpg"
+        media="(min-width: 1100px)"
+        srcset="image/min/mountain-desktop-3x-2.jpg 3x,
+                image/min/mountain-desktop-2x-2.jpg 2x,
+                image/min/mountain-desktop-2.jpg">
+
+      <source type="image/jpg"
+        media="(min-width: 600px)"
+        srcset="image/min/mountain-tablet-3x-2.jpg 3x,
+                image/min/mountain-tablet-2x-2.jpg 2x,
+                image/min/mountain-tablet-2.jpg">
+
+      <source type="image/jpg"
+        srcset="image/min/mountain-mobile-3x-2.jpg 3x,
+                image/min/mountain-mobile-2x-2.jpg 2x,
+                image/min/mountain-mobile-2.jpg">
+
+      <img class="usr-main__img" src="image/min/mountain-mobile-2.jpg"
+                                 width="480" height="285"
+                                 alt="Mountain">
+    </picture>
+
+    <p class="usr-main__text">I'm an adventurer!</p>
+
+  </main>
+
+  <footer>
+
+  </footer>
 
   <script src="js/focus-visible.js" async></script>
 

@@ -1,77 +1,89 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/woff2/Montserrat-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/woff2/Montserrat-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/woff2/Montserrat-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* переменные css */
+:root {
+  /* переменные цвета */
+}
+/* переменные less */
+/* переменные вьюпорта */
+/* центровщик */
+/* переменные плотности экрана */
+/* центровщик контента */
+/* кастомный фокус */
+/* параметры текста для mobile */
 html,
 body {
   margin: 0;
   padding: 0;
 }
-
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
-
 body {
   font-family: 'Montserrat', sans-serif;
 }
-
 /* только для скринридера */
-
 .visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
-
   border: 0;
-
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
-
 button:hover {
   cursor: pointer;
 }
-
 /* настройки кастомного фокуса */
-
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
-
 button:focus:not(:focus-visible) {
   outline: none;
 }
-
 .js-focus-visible .focus-visible {
-  .focusCustom(#000000);
+  outline: 2px solid #000000;
 }
-
 .js-focus-visible button.focus-visible {
   outline-offset: 2px;
 }
-
 /* сслыка пропуска меню */
-
 .skip-link {
   position: fixed;
   top: -100%;
   left: 0;
   z-index: 100;
-
   padding: 10px;
-
   color: #ffffff;
-
   background-color: #000000;
 }
-
 .skip-link:focus {
   top: 0;
 }

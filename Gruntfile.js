@@ -181,6 +181,13 @@ module.exports = function (grunt) {
       },
     },
 
+    ttf2woff2: {
+      default: {
+        src: ["source/fonts/ttf/*"],
+        dest: "source/fonts/woff2/"
+      },
+    },
+
     clean: {
       buildClean: {
         src: ['build/'],
