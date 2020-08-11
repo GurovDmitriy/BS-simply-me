@@ -43,60 +43,227 @@
 <body class="usr-body">
   <header class="usr-header">
 
+    <h1 class="sr-only">Web-dev portfolio</h1>
+
     <a class="skip-link" href="#usr-main">Skip to main</a>
+
+    <nav class="usr-nav">
+      <h2 class="sr-only">Main nav</h2>
+
+      <a class="usr-logo" tabindex="0">Me</a>
+
+      <ul class="usr-menu">
+        <li class="usr-menu__item"><a href="#who"   class="usr-menu__link">Who</a></li>
+        <li class="usr-menu__item"><a href="#what"  class="usr-menu__link">What</a></li>
+        <li class="usr-menu__item"><a href="#where" class="usr-menu__link">Where</a></li>
+      </ul>
+
+    </nav>
 
   </header>
 
   <main class="usr-main">
 
-    <h1 class="usr-main__caption">Who Am I?</h1>
+    <h2 class="sr-only">About me</h2>
 
-    <picture>
-      <source type="image/webp"
-        media="(min-width: 1100px)"
-        srcset="image/min/mountain-desktop-3x-2.webp 3x,
-                image/min/mountain-desktop-2x-2.webp 2x,
-                image/min/mountain-desktop-2.webp">
+    <section class="usr-main__section">
+      <h3 class="usr-main__caption">Who Am I?</h3>
 
-      <source type="image/webp"
-        media="(min-width: 600px)"
-        srcset="image/min/mountain-tablet-3x-2.webp 3x,
-                image/min/mountain-tablet-2x-2.webp 2x,
-                image/min/mountain-tablet-2.webp">
+      <picture>
+        <source type="image/webp"
+          media="(min-width: 1100px)"
+          srcset="image/min/mountain-desktop-3x-2.webp 3x,
+                  image/min/mountain-desktop-2x-2.webp 2x,
+                  image/min/mountain-desktop-2.webp">
 
-      <source type="image/webp"
-        srcset="image/min/mountain-mobile-3x-2.webp 3x,
-                image/min/mountain-mobile-2x-2.webp 2x,
-                image/min/mountain-mobile-2.webp">
+        <source type="image/webp"
+          media="(min-width: 600px)"
+          srcset="image/min/mountain-tablet-3x-2.webp 3x,
+                  image/min/mountain-tablet-2x-2.webp 2x,
+                  image/min/mountain-tablet-2.webp">
 
-      <source type="image/jpg"
-        media="(min-width: 1100px)"
-        srcset="image/min/mountain-desktop-3x-2.jpg 3x,
-                image/min/mountain-desktop-2x-2.jpg 2x,
-                image/min/mountain-desktop-2.jpg">
+        <source type="image/webp"
+          srcset="image/min/mountain-mobile-3x-2.webp 3x,
+                  image/min/mountain-mobile-2x-2.webp 2x,
+                  image/min/mountain-mobile-2.webp">
 
-      <source type="image/jpg"
-        media="(min-width: 600px)"
-        srcset="image/min/mountain-tablet-3x-2.jpg 3x,
-                image/min/mountain-tablet-2x-2.jpg 2x,
-                image/min/mountain-tablet-2.jpg">
+        <source type="image/jpg"
+          media="(min-width: 1100px)"
+          srcset="image/min/mountain-desktop-3x-2.jpg 3x,
+                  image/min/mountain-desktop-2x-2.jpg 2x,
+                  image/min/mountain-desktop-2.jpg">
 
-      <source type="image/jpg"
-        srcset="image/min/mountain-mobile-3x-2.jpg 3x,
-                image/min/mountain-mobile-2x-2.jpg 2x,
-                image/min/mountain-mobile-2.jpg">
+        <source type="image/jpg"
+          media="(min-width: 600px)"
+          srcset="image/min/mountain-tablet-3x-2.jpg 3x,
+                  image/min/mountain-tablet-2x-2.jpg 2x,
+                  image/min/mountain-tablet-2.jpg">
 
-      <img class="usr-main__img" src="image/min/mountain-mobile-2.jpg"
-                                 width="480" height="285"
-                                 alt="Mountain">
-    </picture>
+        <source type="image/jpg"
+          srcset="image/min/mountain-mobile-3x-2.jpg 3x,
+                  image/min/mountain-mobile-2x-2.jpg 2x,
+                  image/min/mountain-mobile-2.jpg">
 
-    <p class="usr-main__text">I'm an adventurer!</p>
+        <img class="usr-main__img" src="image/min/mountain-mobile-2.jpg"
+                                   width="480" height="285"
+                                   alt="Mountain">
+      </picture>
+
+      <p class="usr-main__text">I'm an adventurer!</p>
+    </section>
+
+    <section class="usr-main__section">
+      <h3 class="usr-main__caption">What Am I?</h3>
+
+      <p class="usr-main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+      <form class="usr-form">
+        <input class="usr-form__input" type="search" name="search" placeholder="Search">
+      </form>
+    </section>
+
+    <section class="usr-main__section">
+      <h3 class="usr-main__caption">Where To Find Me?</h3>
+
+      <figure>
+        <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+
+        <picture>
+                <source type="image/webp"
+                  media="(min-width: 1100px)"
+                  srcset="image/min/mountain-desktop-3x-0.webp 3x,
+                          image/min/mountain-desktop-2x-0.webp 2x,
+                          image/min/mountain-desktop-0.webp">
+
+                <source type="image/webp"
+                  media="(min-width: 600px)"
+                  srcset="image/min/mountain-tablet-3x-0.webp 3x,
+                          image/min/mountain-tablet-2x-0.webp 2x,
+                          image/min/mountain-tablet-0.webp">
+
+                <source type="image/webp"
+                  srcset="image/min/mountain-mobile-3x-0.webp 3x,
+                          image/min/mountain-mobile-2x-0.webp 2x,
+                          image/min/mountain-mobile-0.webp">
+
+                <source type="image/jpg"
+                  media="(min-width: 1100px)"
+                  srcset="image/min/mountain-desktop-3x-0.jpg 3x,
+                          image/min/mountain-desktop-2x-0.jpg 2x,
+                          image/min/mountain-desktop-0.jpg">
+
+                <source type="image/jpg"
+                  media="(min-width: 600px)"
+                  srcset="image/min/mountain-tablet-3x-0.jpg 3x,
+                          image/min/mountain-tablet-2x-0.jpg 2x,
+                          image/min/mountain-tablet-0.jpg">
+
+                <source type="image/jpg"
+                  srcset="image/min/mountain-mobile-3x-0.jpg 3x,
+                          image/min/mountain-mobile-2x-0.jpg 2x,
+                          image/min/mountain-mobile-0.jpg">
+
+                <img class="usr-main__img" src="image/min/mountain-mobile-0.jpg"
+                                           width="480" height="285"
+                                           alt="Mountain">
+              </picture>
+      </figure>
+
+      <figure>
+        <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+
+        <picture>
+                <source type="image/webp"
+                  media="(min-width: 1100px)"
+                  srcset="image/min/mountain-desktop-3x-1.webp 3x,
+                          image/min/mountain-desktop-2x-1.webp 2x,
+                          image/min/mountain-desktop-1.webp">
+
+                <source type="image/webp"
+                  media="(min-width: 600px)"
+                  srcset="image/min/mountain-tablet-3x-1.webp 3x,
+                          image/min/mountain-tablet-2x-1.webp 2x,
+                          image/min/mountain-tablet-1.webp">
+
+                <source type="image/webp"
+                  srcset="image/min/mountain-mobile-3x-1.webp 3x,
+                          image/min/mountain-mobile-2x-1.webp 2x,
+                          image/min/mountain-mobile-1.webp">
+
+                <source type="image/jpg"
+                  media="(min-width: 1100px)"
+                  srcset="image/min/mountain-desktop-3x-1.jpg 3x,
+                          image/min/mountain-desktop-2x-1.jpg 2x,
+                          image/min/mountain-desktop-1.jpg">
+
+                <source type="image/jpg"
+                  media="(min-width: 600px)"
+                  srcset="image/min/mountain-tablet-3x-1.jpg 3x,
+                          image/min/mountain-tablet-2x-1.jpg 2x,
+                          image/min/mountain-tablet-1.jpg">
+
+                <source type="image/jpg"
+                  srcset="image/min/mountain-mobile-3x-1.jpg 3x,
+                          image/min/mountain-mobile-2x-1.jpg 2x,
+                          image/min/mountain-mobile-1.jpg">
+
+                <img class="usr-main__img" src="image/min/mountain-mobile-1.jpg"
+                                           width="480" height="285"
+                                           alt="Mountain">
+              </picture>
+      </figure>
+
+      <figure>
+        <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+
+        <picture>
+                <source type="image/webp"
+                  media="(min-width: 1100px)"
+                  srcset="image/min/mountain-desktop-3x-3.webp 3x,
+                          image/min/mountain-desktop-2x-3.webp 2x,
+                          image/min/mountain-desktop-3.webp">
+
+                <source type="image/webp"
+                  media="(min-width: 600px)"
+                  srcset="image/min/mountain-tablet-3x-3.webp 3x,
+                          image/min/mountain-tablet-2x-3.webp 2x,
+                          image/min/mountain-tablet-3.webp">
+
+                <source type="image/webp"
+                  srcset="image/min/mountain-mobile-3x-3.webp 3x,
+                          image/min/mountain-mobile-2x-3.webp 2x,
+                          image/min/mountain-mobile-3.webp">
+
+                <source type="image/jpg"
+                  media="(min-width: 1100px)"
+                  srcset="image/min/mountain-desktop-3x-3.jpg 3x,
+                          image/min/mountain-desktop-2x-3.jpg 2x,
+                          image/min/mountain-desktop-3.jpg">
+
+                <source type="image/jpg"
+                  media="(min-width: 600px)"
+                  srcset="image/min/mountain-tablet-3x-3.jpg 3x,
+                          image/min/mountain-tablet-2x-3.jpg 2x,
+                          image/min/mountain-tablet-3.jpg">
+
+                <source type="image/jpg"
+                  srcset="image/min/mountain-mobile-3x-3.jpg 3x,
+                          image/min/mountain-mobile-2x-3.jpg 2x,
+                          image/min/mountain-mobile-3.jpg">
+
+                <img class="usr-main__img" src="image/min/mountain-mobile-3.jpg"
+                                           width="480" height="285"
+                                           alt="Mountain">
+              </picture>
+      </figure>
+    </section>
 
   </main>
 
-  <footer>
+  <footer class="usr-main">
+    <h2 class="sr-only">Contacts</h2>
 
+    <p class="usr-main__text">Bootstrap Theme Made By <a class="usr-main__link" href="https://www.w3schools.com">www.w3schools.com</a></p>
   </footer>
 
   <script src="js/focus-visible.js" async></script>
