@@ -22,6 +22,13 @@
 /* переменные css */
 :root {
   /* переменные цвета */
+  --colorWhite: #ffffff;
+  --colorGreen: #1abc9c;
+  --colorBlue: #474e5d;
+  --colorBlack: #000000;
+  --colorBlack2: #555555;
+  --colorBlack3: #f5f6f7;
+  --colorBrown: #2f2f2f;
 }
 /* переменные less */
 /* переменные вьюпорта */
@@ -45,7 +52,14 @@ html {
   box-sizing: inherit;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 280px;
   font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+  color: var(--colorBlack3);
 }
 /* только для скринридера */
 .visually-hidden {
@@ -81,9 +95,84 @@ button:focus:not(:focus-visible) {
   left: 0;
   z-index: 100;
   padding: 10px;
-  color: #ffffff;
-  background-color: #000000;
+  color: var(--colorWhite) !important;
+  background-color: var(--colorGreen);
 }
 .skip-link:focus {
   top: 0;
+}
+a:hover {
+  cursor: pointer;
+}
+p {
+  font-size: 16px;
+}
+.usr-nav {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border: 0;
+  border-radius: 0;
+}
+.usr-menu__link:hover {
+  color: var(--colorGreen) !important;
+}
+.usr-main__section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.usr-main__section:first-of-type {
+  color: var(--colorWhite);
+  background-color: var(--colorGreen);
+}
+.usr-main__section:nth-of-type(2) {
+  color: var(--colorWhite);
+  background-color: var(--colorBlue);
+}
+.usr-main__section:last-of-type {
+  color: var(--colorBlack2);
+  background-color: var(--colorWhite);
+}
+.usr-main__caption {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.usr-main__text {
+  margin-bottom: 30px;
+}
+.usr-main__text-caption {
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.usr-main__btn {
+  position: relative;
+  padding-left: 48px;
+}
+.usr-main__btn-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translate(0, -50%);
+}
+.usr-main__img {
+  width: 480px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.usr-gallery__img {
+  width: 100%;
+}
+.usr-footer {
+  flex-grow: 1;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: var(--colorWhite);
+  background-color: var(--colorBrown);
 }

@@ -41,23 +41,39 @@
 </head>
 
 <body class="usr-body">
+
   <header class="usr-header">
 
     <h1 class="sr-only">Web-dev portfolio</h1>
 
-    <a class="skip-link" href="#usr-main">Skip to main</a>
 
-    <nav class="usr-nav">
+    <nav class="nav-bar navbar-default usr-nav">
+
       <h2 class="sr-only">Main nav</h2>
+      <a class="skip-link" href="#usr-main">Skip to main</a>
 
-      <a class="usr-logo" tabindex="0">Me</a>
+      <div class="container">
 
-      <ul class="usr-menu">
-        <li class="usr-menu__item"><a href="#who"   class="usr-menu__link">Who</a></li>
-        <li class="usr-menu__item"><a href="#what"  class="usr-menu__link">What</a></li>
-        <li class="usr-menu__item"><a href="#where" class="usr-menu__link">Where</a></li>
-      </ul>
+        <div class="navbar-header">
+          <button class="navbar-toggle" data-toggle="collapse"
+                                        data-target="#main-nav"
+                                        type="button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand usr-logo" tabindex="0">Me</a>
+        </div>
 
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="nav navbar-nav navbar-right usr-menu">
+            <li class="usr-menu__item"><a href="#who"   class="usr-menu__link">Who</a></li>
+            <li class="usr-menu__item"><a href="#what"  class="usr-menu__link">What</a></li>
+            <li class="usr-menu__item"><a href="#where" class="usr-menu__link">Where</a></li>
+          </ul>
+        </div>
+
+      </div>
     </nav>
 
   </header>
@@ -67,203 +83,222 @@
     <h2 class="sr-only">About me</h2>
 
     <section class="usr-main__section">
-      <h3 class="usr-main__caption">Who Am I?</h3>
+      <div class="container text-center">
+        <h3 class="usr-main__caption">Who Am I?</h3>
 
-      <picture>
-        <source type="image/webp"
-          media="(min-width: 1100px)"
-          srcset="image/min/mountain-desktop-3x-2.webp 3x,
-                  image/min/mountain-desktop-2x-2.webp 2x,
-                  image/min/mountain-desktop-2.webp">
+        <picture>
+          <source type="image/webp"
+            media="(min-width: 1100px)"
+            srcset="image/min/mountain-desktop-3x-2.webp 3x,
+                    image/min/mountain-desktop-2x-2.webp 2x,
+                    image/min/mountain-desktop-2.webp">
 
-        <source type="image/webp"
-          media="(min-width: 600px)"
-          srcset="image/min/mountain-tablet-3x-2.webp 3x,
-                  image/min/mountain-tablet-2x-2.webp 2x,
-                  image/min/mountain-tablet-2.webp">
+          <source type="image/webp"
+            media="(min-width: 600px)"
+            srcset="image/min/mountain-tablet-3x-2.webp 3x,
+                    image/min/mountain-tablet-2x-2.webp 2x,
+                    image/min/mountain-tablet-2.webp">
 
-        <source type="image/webp"
-          srcset="image/min/mountain-mobile-3x-2.webp 3x,
-                  image/min/mountain-mobile-2x-2.webp 2x,
-                  image/min/mountain-mobile-2.webp">
+          <source type="image/webp"
+            srcset="image/min/mountain-mobile-3x-2.webp 3x,
+                    image/min/mountain-mobile-2x-2.webp 2x,
+                    image/min/mountain-mobile-2.webp">
 
-        <source type="image/jpg"
-          media="(min-width: 1100px)"
-          srcset="image/min/mountain-desktop-3x-2.jpg 3x,
-                  image/min/mountain-desktop-2x-2.jpg 2x,
-                  image/min/mountain-desktop-2.jpg">
+          <source type="image/jpg"
+            media="(min-width: 1100px)"
+            srcset="image/min/mountain-desktop-3x-2.jpg 3x,
+                    image/min/mountain-desktop-2x-2.jpg 2x,
+                    image/min/mountain-desktop-2.jpg">
 
-        <source type="image/jpg"
-          media="(min-width: 600px)"
-          srcset="image/min/mountain-tablet-3x-2.jpg 3x,
-                  image/min/mountain-tablet-2x-2.jpg 2x,
-                  image/min/mountain-tablet-2.jpg">
+          <source type="image/jpg"
+            media="(min-width: 600px)"
+            srcset="image/min/mountain-tablet-3x-2.jpg 3x,
+                    image/min/mountain-tablet-2x-2.jpg 2x,
+                    image/min/mountain-tablet-2.jpg">
 
-        <source type="image/jpg"
-          srcset="image/min/mountain-mobile-3x-2.jpg 3x,
-                  image/min/mountain-mobile-2x-2.jpg 2x,
-                  image/min/mountain-mobile-2.jpg">
+          <source type="image/jpg"
+            srcset="image/min/mountain-mobile-3x-2.jpg 3x,
+                    image/min/mountain-mobile-2x-2.jpg 2x,
+                    image/min/mountain-mobile-2.jpg">
 
-        <img class="usr-main__img" src="image/min/mountain-mobile-2.jpg"
-                                   width="480" height="285"
-                                   alt="Mountain">
-      </picture>
+          <img class="img-responsive img-circle usr-main__img" src="image/min/mountain-mobile-2.jpg"
+                                     width="480" height="285"
+                                     alt="Mountain">
+        </picture>
 
-      <p class="usr-main__text">I'm an adventurer!</p>
+        <p class="usr-main__text-caption">I'm an adventurer!</p>
+      </div>
     </section>
 
     <section class="usr-main__section">
-      <h3 class="usr-main__caption">What Am I?</h3>
+      <div class="container text-center">
+        <h3 class="usr-main__caption">What Am I?</h3>
 
-      <p class="usr-main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="usr-main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-      <form class="usr-form">
-        <input class="usr-form__input" type="search" name="search" placeholder="Search">
-      </form>
+        <a class="btn btn-default btn-lg usr-main__btn" href="#">
+          <span class="glyphicon glyphicon-search usr-main__btn-icon"></span> Search</a>
+      </div>
     </section>
 
-    <section class="usr-main__section">
-      <h3 class="usr-main__caption">Where To Find Me?</h3>
+    <section class="usr-gallery usr-main__section">
+      <div class="container-fluid text-center">
+        <h3 class="usr-main__caption">Where To Find Me?</h3>
 
-      <figure>
-        <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+        <div class="row">
+          <div class="col-sm-4">
+            <figure class="usr-gallery__figure">
+              <figcaption class="usr-gallery__figcaption"><p class="usr-main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></figcaption>
 
-        <picture>
-                <source type="image/webp"
-                  media="(min-width: 1100px)"
-                  srcset="image/min/mountain-desktop-3x-0.webp 3x,
-                          image/min/mountain-desktop-2x-0.webp 2x,
-                          image/min/mountain-desktop-0.webp">
+              <picture>
+                      <source type="image/webp"
+                        media="(min-width: 1100px)"
+                        data-srcset="image/min/mountain-desktop-3x-0.webp 3x,
+                                image/min/mountain-desktop-2x-0.webp 2x,
+                                image/min/mountain-desktop-0.webp">
 
-                <source type="image/webp"
-                  media="(min-width: 600px)"
-                  srcset="image/min/mountain-tablet-3x-0.webp 3x,
-                          image/min/mountain-tablet-2x-0.webp 2x,
-                          image/min/mountain-tablet-0.webp">
+                      <source type="image/webp"
+                        media="(min-width: 600px)"
+                        data-srcset="image/min/mountain-tablet-3x-0.webp 3x,
+                                image/min/mountain-tablet-2x-0.webp 2x,
+                                image/min/mountain-tablet-0.webp">
 
-                <source type="image/webp"
-                  srcset="image/min/mountain-mobile-3x-0.webp 3x,
-                          image/min/mountain-mobile-2x-0.webp 2x,
-                          image/min/mountain-mobile-0.webp">
+                      <source type="image/webp"
+                        data-srcset="image/min/mountain-mobile-3x-0.webp 3x,
+                                image/min/mountain-mobile-2x-0.webp 2x,
+                                image/min/mountain-mobile-0.webp">
 
-                <source type="image/jpg"
-                  media="(min-width: 1100px)"
-                  srcset="image/min/mountain-desktop-3x-0.jpg 3x,
-                          image/min/mountain-desktop-2x-0.jpg 2x,
-                          image/min/mountain-desktop-0.jpg">
+                      <source type="image/jpg"
+                        media="(min-width: 1100px)"
+                        data-srcset="image/min/mountain-desktop-3x-0.jpg 3x,
+                                image/min/mountain-desktop-2x-0.jpg 2x,
+                                image/min/mountain-desktop-0.jpg">
 
-                <source type="image/jpg"
-                  media="(min-width: 600px)"
-                  srcset="image/min/mountain-tablet-3x-0.jpg 3x,
-                          image/min/mountain-tablet-2x-0.jpg 2x,
-                          image/min/mountain-tablet-0.jpg">
+                      <source type="image/jpg"
+                        media="(min-width: 600px)"
+                        data-srcset="image/min/mountain-tablet-3x-0.jpg 3x,
+                                image/min/mountain-tablet-2x-0.jpg 2x,
+                                image/min/mountain-tablet-0.jpg">
 
-                <source type="image/jpg"
-                  srcset="image/min/mountain-mobile-3x-0.jpg 3x,
-                          image/min/mountain-mobile-2x-0.jpg 2x,
-                          image/min/mountain-mobile-0.jpg">
+                      <source type="image/jpg"
+                        data-srcset="image/min/mountain-mobile-3x-0.jpg 3x,
+                                image/min/mountain-mobile-2x-0.jpg 2x,
+                                image/min/mountain-mobile-0.jpg">
 
-                <img class="usr-main__img" src="image/min/mountain-mobile-0.jpg"
-                                           width="480" height="285"
-                                           alt="Mountain">
-              </picture>
-      </figure>
+                      <img class="img-responsive usr-gallery__img lazyload" data-src="image/min/mountain-mobile-0.jpg"
+                                                                   alt="Mountain"
+                                                                   width="480"
+                                                                   height="320">
+                    </picture>
+            </figure>
+          </div>
 
-      <figure>
-        <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+          <div class="col-sm-4">
+            <figure class="usr-gallery__figure">
+              <figcaption class="usr-gallery__figcaption"><p class="usr-main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></figcaption>
 
-        <picture>
-                <source type="image/webp"
-                  media="(min-width: 1100px)"
-                  srcset="image/min/mountain-desktop-3x-1.webp 3x,
-                          image/min/mountain-desktop-2x-1.webp 2x,
-                          image/min/mountain-desktop-1.webp">
+              <picture>
+                      <source type="image/webp"
+                        media="(min-width: 1100px)"
+                        data-srcset="image/min/mountain-desktop-3x-1.webp 3x,
+                                image/min/mountain-desktop-2x-1.webp 2x,
+                                image/min/mountain-desktop-1.webp">
 
-                <source type="image/webp"
-                  media="(min-width: 600px)"
-                  srcset="image/min/mountain-tablet-3x-1.webp 3x,
-                          image/min/mountain-tablet-2x-1.webp 2x,
-                          image/min/mountain-tablet-1.webp">
+                      <source type="image/webp"
+                        media="(min-width: 600px)"
+                        data-srcset="image/min/mountain-tablet-3x-1.webp 3x,
+                                image/min/mountain-tablet-2x-1.webp 2x,
+                                image/min/mountain-tablet-1.webp">
 
-                <source type="image/webp"
-                  srcset="image/min/mountain-mobile-3x-1.webp 3x,
-                          image/min/mountain-mobile-2x-1.webp 2x,
-                          image/min/mountain-mobile-1.webp">
+                      <source type="image/webp"
+                        data-srcset="image/min/mountain-mobile-3x-1.webp 3x,
+                                image/min/mountain-mobile-2x-1.webp 2x,
+                                image/min/mountain-mobile-1.webp">
 
-                <source type="image/jpg"
-                  media="(min-width: 1100px)"
-                  srcset="image/min/mountain-desktop-3x-1.jpg 3x,
-                          image/min/mountain-desktop-2x-1.jpg 2x,
-                          image/min/mountain-desktop-1.jpg">
+                      <source type="image/jpg"
+                        media="(min-width: 1100px)"
+                        data-srcset="image/min/mountain-desktop-3x-1.jpg 3x,
+                                image/min/mountain-desktop-2x-1.jpg 2x,
+                                image/min/mountain-desktop-1.jpg">
 
-                <source type="image/jpg"
-                  media="(min-width: 600px)"
-                  srcset="image/min/mountain-tablet-3x-1.jpg 3x,
-                          image/min/mountain-tablet-2x-1.jpg 2x,
-                          image/min/mountain-tablet-1.jpg">
+                      <source type="image/jpg"
+                        media="(min-width: 600px)"
+                        data-srcset="image/min/mountain-tablet-3x-1.jpg 3x,
+                                image/min/mountain-tablet-2x-1.jpg 2x,
+                                image/min/mountain-tablet-1.jpg">
 
-                <source type="image/jpg"
-                  srcset="image/min/mountain-mobile-3x-1.jpg 3x,
-                          image/min/mountain-mobile-2x-1.jpg 2x,
-                          image/min/mountain-mobile-1.jpg">
+                      <source type="image/jpg"
+                        data-srcset="image/min/mountain-mobile-3x-1.jpg 3x,
+                                image/min/mountain-mobile-2x-1.jpg 2x,
+                                image/min/mountain-mobile-1.jpg">
 
-                <img class="usr-main__img" src="image/min/mountain-mobile-1.jpg"
-                                           width="480" height="285"
-                                           alt="Mountain">
-              </picture>
-      </figure>
+                      <img class="img-responsive usr-gallery__img lazyload" data-src="image/min/mountain-mobile-1.jpg"
+                                                                   alt="Mountain"
+                                                                   width="480"
+                                                                   height="320">
+                    </picture>
+            </figure>
+          </div>
 
-      <figure>
-        <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</figcaption>
+          <div class="col-sm-4">
+            <figure class="usr-gallery__figure">
+              <figcaption class="usr-gallery__figcaption"><p class="usr-main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></figcaption>
 
-        <picture>
-                <source type="image/webp"
-                  media="(min-width: 1100px)"
-                  srcset="image/min/mountain-desktop-3x-3.webp 3x,
-                          image/min/mountain-desktop-2x-3.webp 2x,
-                          image/min/mountain-desktop-3.webp">
+              <picture>
+                      <source type="image/webp"
+                        media="(min-width: 1100px)"
+                        data-srcset="image/min/mountain-desktop-3x-3.webp 3x,
+                                image/min/mountain-desktop-2x-3.webp 2x,
+                                image/min/mountain-desktop-3.webp">
 
-                <source type="image/webp"
-                  media="(min-width: 600px)"
-                  srcset="image/min/mountain-tablet-3x-3.webp 3x,
-                          image/min/mountain-tablet-2x-3.webp 2x,
-                          image/min/mountain-tablet-3.webp">
+                      <source type="image/webp"
+                        media="(min-width: 600px)"
+                        data-srcset="image/min/mountain-tablet-3x-3.webp 3x,
+                                image/min/mountain-tablet-2x-3.webp 2x,
+                                image/min/mountain-tablet-3.webp">
 
-                <source type="image/webp"
-                  srcset="image/min/mountain-mobile-3x-3.webp 3x,
-                          image/min/mountain-mobile-2x-3.webp 2x,
-                          image/min/mountain-mobile-3.webp">
+                      <source type="image/webp"
+                        data-srcset="image/min/mountain-mobile-3x-3.webp 3x,
+                                image/min/mountain-mobile-2x-3.webp 2x,
+                                image/min/mountain-mobile-3.webp">
 
-                <source type="image/jpg"
-                  media="(min-width: 1100px)"
-                  srcset="image/min/mountain-desktop-3x-3.jpg 3x,
-                          image/min/mountain-desktop-2x-3.jpg 2x,
-                          image/min/mountain-desktop-3.jpg">
+                      <source type="image/jpg"
+                        media="(min-width: 1100px)"
+                        data-srcset="image/min/mountain-desktop-3x-3.jpg 3x,
+                                image/min/mountain-desktop-2x-3.jpg 2x,
+                                image/min/mountain-desktop-3.jpg">
 
-                <source type="image/jpg"
-                  media="(min-width: 600px)"
-                  srcset="image/min/mountain-tablet-3x-3.jpg 3x,
-                          image/min/mountain-tablet-2x-3.jpg 2x,
-                          image/min/mountain-tablet-3.jpg">
+                      <source type="image/jpg"
+                        media="(min-width: 600px)"
+                        data-srcset="image/min/mountain-tablet-3x-3.jpg 3x,
+                                image/min/mountain-tablet-2x-3.jpg 2x,
+                                image/min/mountain-tablet-3.jpg">
 
-                <source type="image/jpg"
-                  srcset="image/min/mountain-mobile-3x-3.jpg 3x,
-                          image/min/mountain-mobile-2x-3.jpg 2x,
-                          image/min/mountain-mobile-3.jpg">
+                      <source type="image/jpg"
+                        data-srcset="image/min/mountain-mobile-3x-3.jpg 3x,
+                                image/min/mountain-mobile-2x-3.jpg 2x,
+                                image/min/mountain-mobile-3.jpg">
 
-                <img class="usr-main__img" src="image/min/mountain-mobile-3.jpg"
-                                           width="480" height="285"
-                                           alt="Mountain">
-              </picture>
-      </figure>
+                      <img class="img-responsive usr-gallery__img lazyload" data-src="image/min/mountain-mobile-3.jpg"
+                                                                   alt="Mountain"
+                                                                   width="480"
+                                                                   height="320">
+                    </picture>
+            </figure>
+          </div>
+        </div>
+
+      </div>
     </section>
 
   </main>
 
-  <footer class="usr-main">
-    <h2 class="sr-only">Contacts</h2>
+  <footer class="container-fluid text-center usr-footer">
+    <div class="container">
+      <h2 class="sr-only">Contacts</h2>
 
-    <p class="usr-main__text">Bootstrap Theme Made By <a class="usr-main__link" href="https://www.w3schools.com">www.w3schools.com</a></p>
+      <p class="usr-main__text">Bootstrap Theme Made By <a class="usr-main__link" href="https://www.w3schools.com">www.w3schools.com</a></p>
+    </div>
   </footer>
 
   <script src="js/focus-visible.js" async></script>

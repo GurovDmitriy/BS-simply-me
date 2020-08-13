@@ -22,7 +22,7 @@ module.exports = function (grunt) {
       },
       HtmlWatchDev: {
         files: ['source/*.html'],
-        tasks: ['clean:buildCleanHtmlDev', 'copy:buildHtmlCopy', 'prettify'],
+        tasks: ['clean:buildCleanHtmlDev', 'copy:buildHtmlCopy', 'htmlmin'],
       },
       styleWatchDev: {
         files: ['source/less/**/*.less'],
@@ -61,8 +61,8 @@ module.exports = function (grunt) {
           relativeUrls: true,
         },
         files: {
-          'source/css/style.css': 'source/less/style.less'
-        }
+          'source/css/style.css': 'source/less/style.less',
+        },
       },
     },
 
@@ -93,7 +93,7 @@ module.exports = function (grunt) {
       options: {
         separator: '\n',
         stripBanners: true,
-        banner: "'use strict'\n\n",
+        banner: "'use strict';\n\n",
       },
       dist: {
         files: {
@@ -112,8 +112,8 @@ module.exports = function (grunt) {
           expand: true,
           cwd: 'build/js',
           src: '*.js',
-          dest: 'build/js'
-        }]
+          dest: 'build/js',
+        }],
       },
     },
 
@@ -136,7 +136,7 @@ module.exports = function (grunt) {
     cwebp: {
       imagesWebp: {
         options: {
-          q: 70,
+          q: 90,
         },
         files: [{
           expand: true,
@@ -181,10 +181,18 @@ module.exports = function (grunt) {
       },
     },
 
-    ttf2woff2: {
-      default: {
-        src: ["source/fonts/ttf/*"],
-        dest: "source/fonts/woff2/"
+    htmlmin: {
+      dev: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true,
+        },
+        files: [{
+          expand: true,
+          cwd: 'build',
+          src: ['**/*.html', '*.html'],
+          dest: 'build',
+        }],
       },
     },
 
@@ -200,6 +208,13 @@ module.exports = function (grunt) {
       },
       buildCleanHtmlDev: {
         src: ['build/*.html'],
+      },
+    },
+
+    ttf2woff2: {
+      default: {
+        src: ['source/fonts/ttf/*.ttf'],
+        dest: 'source/fonts/woff2/',
       },
     },
 
@@ -266,7 +281,7 @@ module.exports = function (grunt) {
     'postcss',
     'csso',
     'uglify',
-    'prettify',
+    'htmlmin',
     'browserSync:serverSyncDev',
     'concurrent:targetWatchDev',
   ]);
@@ -285,6 +300,6 @@ module.exports = function (grunt) {
     'postcss',
     'csso',
     'uglify',
-    'prettify',
+    'htmlmin',
   ]);
 };

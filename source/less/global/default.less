@@ -16,7 +16,17 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+  min-width: 280px;
+
   font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+
+  color: var(--colorBlack3);
 }
 
 /* только для скринридера */
@@ -67,11 +77,19 @@ button:focus:not(:focus-visible) {
 
   padding: 10px;
 
-  color: #ffffff;
+  color: var(--colorWhite) !important;
 
-  background-color: #000000;
+  background-color: var(--colorGreen);
 }
 
 .skip-link:focus {
   top: 0;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+p {
+  font-size: 16px;
 }
