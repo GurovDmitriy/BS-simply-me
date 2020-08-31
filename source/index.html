@@ -7,9 +7,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description"              content="">
-  <meta name="keywords"                 content="">
-  <meta name="author"                   content="Гуров Дмитрий">
+  <meta name="description"              content="Bootstrap 3 site - Me">
+  <meta name="keywords"                 content="bootstrap, template, theme, music, portfolio">
+  <meta name="author"                   content="Gurov Dmitriy">
   <meta name="robots"                   content="">
   <meta name="googlebot"                content="">
   <meta name="google-site-verification" content="">
@@ -18,39 +18,51 @@
   <link rel="preload" href="fonts/woff2/Montserrat-Light.woff2"   as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/woff2/Montserrat-Bold.woff2"    as="font" type="font/woff2" crossorigin>
 
-  <link rel="preload" href="css/style.css" as="style">
+  <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" as="style">
+  <link rel="preload" href="css/style.css"                                                         as="style">
 
-  <link rel="preload" href="js/modernizr-custom.js" as="script">
-  <link rel="preload" href="js/picturefill.js"      as="script">
-  <link rel="preload" href="js/lazysizes.js"        as="script">
+  <link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"      as="script">
+  <link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"   as="script">
+
+  <link rel="preload" href="js/webp.js"                                                            as="script">
+  <link rel="preload" href="js/picturefill.js"                                                     as="script">
+  <link rel="preload" href="js/lazysizes.js"                                                       as="script">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
 
-  <link rel="icon" href="" type="image/svg+xml">
+  <!-- <link rel="icon" href="#" type="image/svg+xml"> -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"    async></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" async></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"    defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" defer></script>
 
   <script>document.createElement("picture");</script>
 
-  <script src="js/modernizr-custom.js" async></script>
-  <script src="js/picturefill.js"      async></script>
-  <script src="js/lazysizes.js"        async></script>
+  <script src="js/webp.js"        async></script>
+  <script src="js/picturefill.js" async></script>
+  <script src="js/lazysizes.js"   async></script>
 
 </head>
 
-<body class="usr-body">
+<!-- Navigation -->
 
-  <header class="usr-header">
+<!-- -Header -->
+<!-- -Nav -->
+<!-- -Main -->
+<!-- -Gallery -->
+<!-- -Footer -->
+
+<body>
+
+  <!-- -Header -->
+  <header>
 
     <h1 class="sr-only">Web-dev portfolio</h1>
 
-
-    <nav class="nav-bar navbar-default usr-nav">
+    <!-- -Nav -->
+    <nav class="nav-bar navbar-default">
 
       <h2 class="sr-only">Main nav</h2>
-      <a class="skip-link" href="#usr-main">Skip to main</a>
 
       <div class="container">
 
@@ -58,33 +70,36 @@
           <button class="navbar-toggle" data-toggle="collapse"
                                         data-target="#main-nav"
                                         type="button">
+            <span class="sr-only">Button menu</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand usr-logo" tabindex="0">Me</a>
+          <a class="navbar-brand" tabindex="0">Me</a>
+          <a class="skip-link" href="#usr-main">Skip to main</a>
         </div>
 
         <div class="collapse navbar-collapse" id="main-nav">
-          <ul class="nav navbar-nav navbar-right usr-menu">
-            <li class="usr-menu__item"><a href="#who"   class="usr-menu__link">Who</a></li>
-            <li class="usr-menu__item"><a href="#what"  class="usr-menu__link">What</a></li>
-            <li class="usr-menu__item"><a href="#where" class="usr-menu__link">Where</a></li>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#who">Who</a></li>
+            <li><a href="#what">What</a></li>
+            <li><a href="#where">Where</a></li>
           </ul>
         </div>
 
       </div>
     </nav>
+    <!-- Nav end -->
 
   </header>
+  <!-- Header end -->
 
-  <main class="usr-main">
+  <!-- -Main -->
+  <main id="usr-main">
 
-    <h2 class="sr-only">About me</h2>
-
-    <section class="usr-main__section">
-      <div class="container text-center">
-        <h3 class="usr-main__caption">Who Am I?</h3>
+    <section>
+      <div class="container-fluid text-center">
+        <h2 tabindex="0">Who Am I?</h2>
 
         <picture>
           <source type="image/webp"
@@ -121,185 +136,187 @@
                     image/min/mountain-mobile-2x-2.jpg 2x,
                     image/min/mountain-mobile-2.jpg">
 
-          <img class="img-responsive img-circle usr-main__img" src="image/min/mountain-mobile-2.jpg"
+          <img class="img-responsive img-circle" src="image/min/mountain-mobile-2.jpg"
                                      width="480" height="285"
                                      alt="Mountain">
         </picture>
 
-        <p class="usr-main__text-caption">I'm an adventurer!</p>
+        <p>I'm an adventurer!</p>
       </div>
     </section>
 
-    <section class="usr-main__section">
-      <div class="container text-center">
-        <h3 class="usr-main__caption">What Am I?</h3>
-
-        <p class="usr-main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-        <a class="btn btn-default btn-lg usr-main__btn" href="#">
-          <span class="glyphicon glyphicon-search usr-main__btn-icon"></span> Search</a>
-      </div>
-    </section>
-
-    <section class="usr-gallery usr-main__section">
+    <section>
       <div class="container-fluid text-center">
-        <h3 class="usr-main__caption">Where To Find Me?</h3>
+        <h2 tabindex="0">What Am I?</h2>
+
+        <p>Bandwidth shine relief society a collaborative cities expose the truth. Engaging, co-create social innovation; energize radical. Inclusive sustainable, radical, to systems thinking society when, compassion transparent. Parse, initiative empathetic the resistance bandwidth the resistance empower support capacity building. Technology, commitment, our work, program areas circular thought partnership dynamic agile social impact.</p>
+
+        <a class="btn btn-default btn-lg" href="#">
+          <span class="glyphicon glyphicon-search"></span> Search</a>
+      </div>
+    </section>
+
+    <!-- -Gallery -->
+    <section>
+      <div class="container-fluid text-center">
+        <h2 tabindex="0">Where To Find Me?</h2>
 
         <div class="row">
           <div class="col-sm-4">
-            <figure class="usr-gallery__figure">
-              <figcaption class="usr-gallery__figcaption"><p class="usr-main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></figcaption>
+            <figure tabindex="0">
+              <figcaption><p>Engaging, incubator; and thought leadership empower communities and inspiring grit strengthening infrastructure. Progress justice do-gooder thought leader NGO; change-makers citizen-centered.</p></figcaption>
 
               <picture>
-                      <source type="image/webp"
-                        media="(min-width: 1100px)"
-                        data-srcset="image/min/mountain-desktop-3x-0.webp 3x,
-                                image/min/mountain-desktop-2x-0.webp 2x,
-                                image/min/mountain-desktop-0.webp">
+                <source type="image/webp"
+                  media="(min-width: 1100px)"
+                  data-srcset="image/min/mountain-desktop-3x-0.webp 3x,
+                          image/min/mountain-desktop-2x-0.webp 2x,
+                          image/min/mountain-desktop-0.webp">
 
-                      <source type="image/webp"
-                        media="(min-width: 600px)"
-                        data-srcset="image/min/mountain-tablet-3x-0.webp 3x,
-                                image/min/mountain-tablet-2x-0.webp 2x,
-                                image/min/mountain-tablet-0.webp">
+                <source type="image/webp"
+                  media="(min-width: 600px)"
+                  data-srcset="image/min/mountain-tablet-3x-0.webp 3x,
+                          image/min/mountain-tablet-2x-0.webp 2x,
+                          image/min/mountain-tablet-0.webp">
 
-                      <source type="image/webp"
-                        data-srcset="image/min/mountain-mobile-3x-0.webp 3x,
-                                image/min/mountain-mobile-2x-0.webp 2x,
-                                image/min/mountain-mobile-0.webp">
+                <source type="image/webp"
+                  data-srcset="image/min/mountain-mobile-3x-0.webp 3x,
+                          image/min/mountain-mobile-2x-0.webp 2x,
+                          image/min/mountain-mobile-0.webp">
 
-                      <source type="image/jpg"
-                        media="(min-width: 1100px)"
-                        data-srcset="image/min/mountain-desktop-3x-0.jpg 3x,
-                                image/min/mountain-desktop-2x-0.jpg 2x,
-                                image/min/mountain-desktop-0.jpg">
+                <source type="image/jpg"
+                  media="(min-width: 1100px)"
+                  data-srcset="image/min/mountain-desktop-3x-0.jpg 3x,
+                          image/min/mountain-desktop-2x-0.jpg 2x,
+                          image/min/mountain-desktop-0.jpg">
 
-                      <source type="image/jpg"
-                        media="(min-width: 600px)"
-                        data-srcset="image/min/mountain-tablet-3x-0.jpg 3x,
-                                image/min/mountain-tablet-2x-0.jpg 2x,
-                                image/min/mountain-tablet-0.jpg">
+                <source type="image/jpg"
+                  media="(min-width: 600px)"
+                  data-srcset="image/min/mountain-tablet-3x-0.jpg 3x,
+                          image/min/mountain-tablet-2x-0.jpg 2x,
+                          image/min/mountain-tablet-0.jpg">
 
-                      <source type="image/jpg"
-                        data-srcset="image/min/mountain-mobile-3x-0.jpg 3x,
-                                image/min/mountain-mobile-2x-0.jpg 2x,
-                                image/min/mountain-mobile-0.jpg">
+                <source type="image/jpg"
+                  data-srcset="image/min/mountain-mobile-3x-0.jpg 3x,
+                          image/min/mountain-mobile-2x-0.jpg 2x,
+                          image/min/mountain-mobile-0.jpg">
 
-                      <img class="img-responsive usr-gallery__img lazyload" data-src="image/min/mountain-mobile-0.jpg"
-                                                                   alt="Mountain"
-                                                                   width="480"
-                                                                   height="320">
-                    </picture>
+                <img class="img-responsive lazyload" data-src="image/min/mountain-mobile-0.jpg"
+                                                     alt="Mountain"
+                                                     width="480"
+                                                     height="320">
+              </picture>
             </figure>
           </div>
 
           <div class="col-sm-4">
-            <figure class="usr-gallery__figure">
-              <figcaption class="usr-gallery__figcaption"><p class="usr-main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></figcaption>
+            <figure tabindex="0">
+              <figcaption><p>Engaging, incubator; and thought leadership empower communities and inspiring grit strengthening infrastructure. Progress justice do-gooder thought leader NGO; change-makers citizen-centered.</p></figcaption>
 
               <picture>
-                      <source type="image/webp"
-                        media="(min-width: 1100px)"
-                        data-srcset="image/min/mountain-desktop-3x-1.webp 3x,
-                                image/min/mountain-desktop-2x-1.webp 2x,
-                                image/min/mountain-desktop-1.webp">
+                <source type="image/webp"
+                  media="(min-width: 1100px)"
+                  data-srcset="image/min/mountain-desktop-3x-1.webp 3x,
+                          image/min/mountain-desktop-2x-1.webp 2x,
+                          image/min/mountain-desktop-1.webp">
 
-                      <source type="image/webp"
-                        media="(min-width: 600px)"
-                        data-srcset="image/min/mountain-tablet-3x-1.webp 3x,
-                                image/min/mountain-tablet-2x-1.webp 2x,
-                                image/min/mountain-tablet-1.webp">
+                <source type="image/webp"
+                  media="(min-width: 600px)"
+                  data-srcset="image/min/mountain-tablet-3x-1.webp 3x,
+                          image/min/mountain-tablet-2x-1.webp 2x,
+                          image/min/mountain-tablet-1.webp">
 
-                      <source type="image/webp"
-                        data-srcset="image/min/mountain-mobile-3x-1.webp 3x,
-                                image/min/mountain-mobile-2x-1.webp 2x,
-                                image/min/mountain-mobile-1.webp">
+                <source type="image/webp"
+                  data-srcset="image/min/mountain-mobile-3x-1.webp 3x,
+                          image/min/mountain-mobile-2x-1.webp 2x,
+                          image/min/mountain-mobile-1.webp">
 
-                      <source type="image/jpg"
-                        media="(min-width: 1100px)"
-                        data-srcset="image/min/mountain-desktop-3x-1.jpg 3x,
-                                image/min/mountain-desktop-2x-1.jpg 2x,
-                                image/min/mountain-desktop-1.jpg">
+                <source type="image/jpg"
+                  media="(min-width: 1100px)"
+                  data-srcset="image/min/mountain-desktop-3x-1.jpg 3x,
+                          image/min/mountain-desktop-2x-1.jpg 2x,
+                          image/min/mountain-desktop-1.jpg">
 
-                      <source type="image/jpg"
-                        media="(min-width: 600px)"
-                        data-srcset="image/min/mountain-tablet-3x-1.jpg 3x,
-                                image/min/mountain-tablet-2x-1.jpg 2x,
-                                image/min/mountain-tablet-1.jpg">
+                <source type="image/jpg"
+                  media="(min-width: 600px)"
+                  data-srcset="image/min/mountain-tablet-3x-1.jpg 3x,
+                          image/min/mountain-tablet-2x-1.jpg 2x,
+                          image/min/mountain-tablet-1.jpg">
 
-                      <source type="image/jpg"
-                        data-srcset="image/min/mountain-mobile-3x-1.jpg 3x,
-                                image/min/mountain-mobile-2x-1.jpg 2x,
-                                image/min/mountain-mobile-1.jpg">
+                <source type="image/jpg"
+                  data-srcset="image/min/mountain-mobile-3x-1.jpg 3x,
+                          image/min/mountain-mobile-2x-1.jpg 2x,
+                          image/min/mountain-mobile-1.jpg">
 
-                      <img class="img-responsive usr-gallery__img lazyload" data-src="image/min/mountain-mobile-1.jpg"
-                                                                   alt="Mountain"
-                                                                   width="480"
-                                                                   height="320">
-                    </picture>
+                <img class="img-responsive lazyload" data-src="image/min/mountain-mobile-1.jpg"
+                                                     alt="Mountain"
+                                                     width="480"
+                                                     height="320">
+              </picture>
             </figure>
           </div>
 
           <div class="col-sm-4">
-            <figure class="usr-gallery__figure">
-              <figcaption class="usr-gallery__figcaption"><p class="usr-main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></figcaption>
+            <figure tabindex="0">
+              <figcaption><p>Engaging, incubator; and thought leadership empower communities and inspiring grit strengthening infrastructure. Progress justice do-gooder thought leader NGO; change-makers citizen-centered.</p></figcaption>
 
               <picture>
-                      <source type="image/webp"
-                        media="(min-width: 1100px)"
-                        data-srcset="image/min/mountain-desktop-3x-3.webp 3x,
-                                image/min/mountain-desktop-2x-3.webp 2x,
-                                image/min/mountain-desktop-3.webp">
+                <source type="image/webp"
+                  media="(min-width: 1100px)"
+                  data-srcset="image/min/mountain-desktop-3x-3.webp 3x,
+                          image/min/mountain-desktop-2x-3.webp 2x,
+                          image/min/mountain-desktop-3.webp">
 
-                      <source type="image/webp"
-                        media="(min-width: 600px)"
-                        data-srcset="image/min/mountain-tablet-3x-3.webp 3x,
-                                image/min/mountain-tablet-2x-3.webp 2x,
-                                image/min/mountain-tablet-3.webp">
+                <source type="image/webp"
+                  media="(min-width: 600px)"
+                  data-srcset="image/min/mountain-tablet-3x-3.webp 3x,
+                          image/min/mountain-tablet-2x-3.webp 2x,
+                          image/min/mountain-tablet-3.webp">
 
-                      <source type="image/webp"
-                        data-srcset="image/min/mountain-mobile-3x-3.webp 3x,
-                                image/min/mountain-mobile-2x-3.webp 2x,
-                                image/min/mountain-mobile-3.webp">
+                <source type="image/webp"
+                  data-srcset="image/min/mountain-mobile-3x-3.webp 3x,
+                          image/min/mountain-mobile-2x-3.webp 2x,
+                          image/min/mountain-mobile-3.webp">
 
-                      <source type="image/jpg"
-                        media="(min-width: 1100px)"
-                        data-srcset="image/min/mountain-desktop-3x-3.jpg 3x,
-                                image/min/mountain-desktop-2x-3.jpg 2x,
-                                image/min/mountain-desktop-3.jpg">
+                <source type="image/jpg"
+                  media="(min-width: 1100px)"
+                  data-srcset="image/min/mountain-desktop-3x-3.jpg 3x,
+                          image/min/mountain-desktop-2x-3.jpg 2x,
+                          image/min/mountain-desktop-3.jpg">
 
-                      <source type="image/jpg"
-                        media="(min-width: 600px)"
-                        data-srcset="image/min/mountain-tablet-3x-3.jpg 3x,
-                                image/min/mountain-tablet-2x-3.jpg 2x,
-                                image/min/mountain-tablet-3.jpg">
+                <source type="image/jpg"
+                  media="(min-width: 600px)"
+                  data-srcset="image/min/mountain-tablet-3x-3.jpg 3x,
+                          image/min/mountain-tablet-2x-3.jpg 2x,
+                          image/min/mountain-tablet-3.jpg">
 
-                      <source type="image/jpg"
-                        data-srcset="image/min/mountain-mobile-3x-3.jpg 3x,
-                                image/min/mountain-mobile-2x-3.jpg 2x,
-                                image/min/mountain-mobile-3.jpg">
+                <source type="image/jpg"
+                  data-srcset="image/min/mountain-mobile-3x-3.jpg 3x,
+                          image/min/mountain-mobile-2x-3.jpg 2x,
+                          image/min/mountain-mobile-3.jpg">
 
-                      <img class="img-responsive usr-gallery__img lazyload" data-src="image/min/mountain-mobile-3.jpg"
-                                                                   alt="Mountain"
-                                                                   width="480"
-                                                                   height="320">
-                    </picture>
+                <img class="img-responsive lazyload" data-src="image/min/mountain-mobile-3.jpg"
+                                                     alt="Mountain"
+                                                     width="480"
+                                                     height="320">
+              </picture>
             </figure>
           </div>
         </div>
 
       </div>
     </section>
+    <!-- Gallery end -->
 
   </main>
 
-  <footer class="container-fluid text-center usr-footer">
-    <div class="container">
-      <h2 class="sr-only">Contacts</h2>
+  <!-- -Footer -->
+  <footer class="container-fluid text-center">
+    <h2 class="sr-only">Contacts</h2>
 
-      <p class="usr-main__text">Bootstrap Theme Made By <a class="usr-main__link" href="https://www.w3schools.com">www.w3schools.com</a></p>
-    </div>
+    <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
   </footer>
+  <!-- Footer end -->
 
   <script src="js/focus-visible.js" async></script>
 
